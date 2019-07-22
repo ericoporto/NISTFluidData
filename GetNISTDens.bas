@@ -15,7 +15,11 @@ Function GetDensNIST(fluid As String, pressure As Double, temperature As Double)
             FluidID = "C7732185"
         Else
             If (StrComp(fluid, "C3H8", vbTextCompare) = 0) Or (StrComp(fluid, "Propane", vbTextCompare) = 0) Then
-            FluidID = "C74986"
+                FluidID = "C74986"
+            Else
+                If (StrComp(fluid, "C7H16", vbTextCompare) = 0) Or (StrComp(fluid, "Heptane", vbTextCompare) = 0) Then
+                    FluidID = "C142825"
+                End If
             End If
         End If
     End If
