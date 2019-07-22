@@ -32,7 +32,7 @@ Function GetDensNIST(fluid As String, pressure As Double, temperature As Double)
     Pstr = Str(pressure + 14.7)
     Pstr = Trim(Replace(Pstr, ",", "."))
 
-    URL = "http://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=" & FluidID & "&Type=IsoTherm&Digits=5&PLow=" & Pstr & "&PHigh=" & Pstr & "&PInc=&T=" & Tstr & "&RefState=DEF&TUnit=C&PUnit=psia&DUnit=kg%2Fm3&HUnit=kJ%2Fmol&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm"
+    URL = "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=" & FluidID & "&Type=IsoTherm&Digits=5&PLow=" & Pstr & "&PHigh=" & Pstr & "&PInc=&T=" & Tstr & "&RefState=DEF&TUnit=C&PUnit=psia&DUnit=kg%2Fm3&HUnit=kJ%2Fmol&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm"
 
     Dim SDens As String
 
